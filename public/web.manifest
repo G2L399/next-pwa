@@ -1,0 +1,17 @@
+{
+  "name": "Indian Button",
+  "short_name": "Indian",
+  "theme_color": "#8936FF",
+  "background_color": "#333333",
+  "start_url": "/",
+  "id": "indian",
+  "display": "standalone",
+  "description": "indian nigga",
+  "icons": [
+    {
+      "src": "icon512_rounded.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
