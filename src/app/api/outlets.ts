@@ -1,11 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
 
-const BACKEND_URL = process.env.BACKEND_URL;
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const response = await axios.get('http://localhost:3001/outlets');
+    console.log('Fetching outlets from:', BACKEND_URL);
+    const response = await axios.get(`${BACKEND_URL}/outlets`);
     res.status(200).json(response.data);
   } catch (error) {
     console.error('Error fetching outlets:', error);

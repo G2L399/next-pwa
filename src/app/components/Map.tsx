@@ -30,8 +30,9 @@ const Map = () => {
 
   useEffect(() => {
     const fetchOutlets = async () => {
-      console.log('nigger', process.env.BACKEND_URL);
-      const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';      const url = `${BASE_URL}/outlets`; // Update to call the API route
+      console.log('nigger', process.env.NEXT_PUBLIC_BACKEND_URL);
+      const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';      
+      const url = `${BASE_URL}/outlets`; // Update to call the API route
       console.log('Fetching from URL:', url);
 
       try {
