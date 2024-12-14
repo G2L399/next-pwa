@@ -17,7 +17,7 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -7.779756932063459, // Default center (e.g., Jakarta)
+  lat: -7.779756932063459,
   lng: 110.37802644732686,
 };
 
@@ -51,7 +51,7 @@ const Map = () => {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={100}>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
       {outlets.map((outlet) => (
         <Marker
           key={outlet.id_outlet}
