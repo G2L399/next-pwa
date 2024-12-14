@@ -9,10 +9,9 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
+/cafe_api
 # testing
 /coverage
-
 # next.js
 /.next/
 /out/
